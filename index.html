@@ -218,7 +218,7 @@ header{
     color:var(--dark);
 }
 
-/* SECTIONS */
+/* GENERAL SECTIONS */
 section{
     padding:80px 20px;
 }
@@ -250,6 +250,94 @@ section{
 
 .section-heading p{
     color:#617066;
+}
+
+/* PRODUCTS - NOW BEFORE ABOUT */
+.products{
+    background:var(--cream);
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-image{
+    height:220px;
+    background:#e9e9df;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+.product-info{
+    padding:18px;
+}
+
+.product-info h3{
+    color:var(--dark);
+    font-size:17px;
+}
+
+.product-description{
+    color:#718076;
+    font-size:12px;
+    margin:7px 0 12px;
+}
+
+.price{
+    color:var(--green);
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:13px;
+}
+
+.product-actions{
+    display:flex;
+    gap:8px;
+}
+
+.add-cart{
+    flex:1;
+    background:var(--green);
+    color:white;
+    border:0;
+    padding:11px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.order-now{
+    background:#e9f3e9;
+    color:var(--green);
+    border:0;
+    padding:11px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:700;
 }
 
 /* STATS */
@@ -360,94 +448,6 @@ section{
 .solution-card h3{
     color:var(--dark);
     margin-bottom:10px;
-}
-
-/* PRODUCTS */
-.products{
-    background:var(--cream);
-}
-
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.product-card{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-    transition:.3s;
-}
-
-.product-card:hover{
-    transform:translateY(-6px);
-}
-
-.product-image{
-    height:220px;
-    background:#e9e9df;
-    overflow:hidden;
-}
-
-.product-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.product-card:hover img{
-    transform:scale(1.05);
-}
-
-.product-info{
-    padding:18px;
-}
-
-.product-info h3{
-    color:var(--dark);
-    font-size:17px;
-}
-
-.product-description{
-    color:#718076;
-    font-size:12px;
-    margin:7px 0 12px;
-}
-
-.price{
-    color:var(--green);
-    font-size:20px;
-    font-weight:800;
-    margin-bottom:13px;
-}
-
-.product-actions{
-    display:flex;
-    gap:8px;
-}
-
-.add-cart{
-    flex:1;
-    background:var(--green);
-    color:white;
-    border:0;
-    padding:11px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:700;
-}
-
-.order-now{
-    background:#e9f3e9;
-    color:var(--green);
-    border:0;
-    padding:11px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:700;
 }
 
 /* WHY US */
@@ -811,6 +811,7 @@ footer p,footer a{
 
 /* RESPONSIVE */
 @media(max-width:900px){
+
     .nav-links{
         display:none;
     }
@@ -846,6 +847,7 @@ footer p,footer a{
 }
 
 @media(max-width:560px){
+
     section{
         padding:60px 15px;
     }
@@ -908,6 +910,7 @@ footer p,footer a{
 <body>
 
 <header>
+
 <nav class="navbar">
 
 <div class="logo">
@@ -917,9 +920,9 @@ JIKO <span>KOA</span>
 
 <div class="nav-links">
 <a href="#home">Home</a>
+<a href="#products">Products</a>
 <a href="#about">About</a>
 <a href="#solutions">Solutions</a>
-<a href="#products">Products</a>
 <a href="#delivery">Delivery</a>
 <a href="#contact">Contact</a>
 </div>
@@ -929,15 +932,19 @@ JIKO <span>KOA</span>
 </button>
 
 </nav>
+
 </header>
 
 <main>
 
 <!-- HERO -->
 <section class="hero" id="home">
+
 <div class="hero-content">
 
-<div class="badge">🌱 CLEAN ENERGY • SMART COOKING • KENYA</div>
+<div class="badge">
+🌱 CLEAN ENERGY • SMART COOKING • KENYA
+</div>
 
 <h1>
 Better Cooking.<br>
@@ -952,15 +959,343 @@ energy more efficiently.
 </p>
 
 <div class="hero-buttons">
-<a href="#products" class="btn btn-primary">Explore Our Solutions</a>
-<a href="https://wa.me/" class="btn btn-outline">Order on WhatsApp</a>
+
+<a href="#products" class="btn btn-primary">
+Explore Our Products
+</a>
+
+<a href="https://wa.me/" class="btn btn-outline">
+Order on WhatsApp
+</a>
+
 </div>
 
 </div>
+
 </section>
+
+
+<!-- PRODUCTS FIRST -->
+<section class="products" id="products">
+
+<div class="section-heading">
+
+<span>Shop Jiko Koa</span>
+
+<h2>Our Cooking Solutions</h2>
+
+<p>
+Choose a Jiko Koa stove that matches your cooking needs.
+Add products to your cart or order directly through WhatsApp.
+</p>
+
+</div>
+
+<div class="container product-grid">
+
+<!-- PRODUCT 1 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko1.jpg" alt="Jiko Koa Classic Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Classic</h3>
+
+<p class="product-description">
+Efficient everyday charcoal cooking stove.
+</p>
+
+<div class="price">
+KSh 3,500
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Classic',3500)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Classic',3500)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko2.jpg" alt="Jiko Koa Standard Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Standard</h3>
+
+<p class="product-description">
+Practical and durable clean-cooking solution.
+</p>
+
+<div class="price">
+KSh 4,500
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Standard',4500)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Standard',4500)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko3.jpg" alt="Jiko Koa Premium Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Premium</h3>
+
+<p class="product-description">
+Premium stove for efficient home cooking.
+</p>
+
+<div class="price">
+KSh 5,500
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Premium',5500)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Premium',5500)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 4 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko4.jpg" alt="Jiko Koa Pro Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Pro</h3>
+
+<p class="product-description">
+Built for customers who need more cooking capacity.
+</p>
+
+<div class="price">
+KSh 6,000
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Pro',6000)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Pro',6000)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 5 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko5.jpg" alt="Jiko Koa Family Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Family</h3>
+
+<p class="product-description">
+A larger solution for family cooking.
+</p>
+
+<div class="price">
+KSh 6,500
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Family',6500)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Family',6500)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko6.jpg" alt="Jiko Koa Deluxe Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Deluxe</h3>
+
+<p class="product-description">
+Enhanced cooking solution for demanding users.
+</p>
+
+<div class="price">
+KSh 7,000
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Deluxe',7000)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Deluxe',7000)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko7.jpg" alt="Jiko Koa Enterprise Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Enterprise</h3>
+
+<p class="product-description">
+High-capacity solution for heavier cooking needs.
+</p>
+
+<div class="price">
+KSh 7,500
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Enterprise',7500)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Enterprise',7500)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 8 -->
+<div class="product-card">
+
+<div class="product-image">
+<img src="jiko8.jpg" alt="Jiko Koa Premium Plus Stove">
+</div>
+
+<div class="product-info">
+
+<h3>Jiko Koa Premium Plus</h3>
+
+<p class="product-description">
+Our premium option for demanding customers.
+</p>
+
+<div class="price">
+KSh 8,500
+</div>
+
+<div class="product-actions">
+
+<button class="add-cart"
+onclick="addToCart('Jiko Koa Premium Plus',8500)">
+Add to Cart
+</button>
+
+<button class="order-now"
+onclick="orderProduct('Jiko Koa Premium Plus',8500)">
+Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
 
 <!-- STATS -->
 <section class="stats">
+
 <div class="container stats-grid">
 
 <div class="stat">
@@ -984,10 +1319,13 @@ energy more efficiently.
 </div>
 
 </div>
+
 </section>
+
 
 <!-- ABOUT -->
 <section id="about">
+
 <div class="container about-grid">
 
 <div class="about-image">
@@ -1025,19 +1363,26 @@ more value from the fuel they use.
 </ul>
 
 </div>
+
 </div>
+
 </section>
+
 
 <!-- SOLUTIONS -->
 <section class="solutions" id="solutions">
 
 <div class="section-heading">
+
 <span>Our Solutions</span>
+
 <h2>Smart energy for everyday cooking</h2>
+
 <p>
 Practical clean-cooking solutions designed for homes,
 businesses and institutions.
 </p>
+
 </div>
 
 <div class="container solution-grid">
@@ -1070,162 +1415,24 @@ Kenyan households.
 </div>
 
 </div>
+
 </section>
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
-
-<div class="section-heading">
-<span>Shop Jiko Koa</span>
-<h2>Our Cooking Solutions</h2>
-<p>
-Choose a Jiko Koa stove that matches your cooking needs.
-Add products to your cart or order directly through WhatsApp.
-</p>
-</div>
-
-<div class="container product-grid">
-
-<!-- PRODUCT 1 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko1.jpg" alt="Jiko Koa Stove 1">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Classic</h3>
-<p class="product-description">Efficient everyday charcoal cooking stove.</p>
-<div class="price">KSh 3,500</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Classic',3500)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Classic',3500)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 2 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko2.jpg" alt="Jiko Koa Stove 2">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Standard</h3>
-<p class="product-description">Practical and durable clean-cooking solution.</p>
-<div class="price">KSh 4,500</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Standard',4500)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Standard',4500)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 3 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko3.jpg" alt="Jiko Koa Stove 3">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Premium</h3>
-<p class="product-description">Premium stove for efficient home cooking.</p>
-<div class="price">KSh 5,500</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Premium',5500)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Premium',5500)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 4 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko4.jpg" alt="Jiko Koa Stove 4">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Pro</h3>
-<p class="product-description">Built for customers who need more cooking capacity.</p>
-<div class="price">KSh 6,000</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Pro',6000)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Pro',6000)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 5 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko5.jpg" alt="Jiko Koa Stove 5">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Family</h3>
-<p class="product-description">A larger solution for family cooking.</p>
-<div class="price">KSh 6,500</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Family',6500)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Family',6500)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 6 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko6.jpg" alt="Jiko Koa Stove 6">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Deluxe</h3>
-<p class="product-description">Enhanced cooking solution for demanding users.</p>
-<div class="price">KSh 7,000</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Deluxe',7000)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Deluxe',7000)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 7 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko7.jpg" alt="Jiko Koa Stove 7">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Enterprise</h3>
-<p class="product-description">High-capacity solution for heavier cooking needs.</p>
-<div class="price">KSh 7,500</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Enterprise',7500)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Enterprise',7500)">Order</button>
-</div>
-</div>
-</div>
-
-<!-- PRODUCT 8 -->
-<div class="product-card">
-<div class="product-image">
-<img src="jiko8.jpg" alt="Jiko Koa Stove 8">
-</div>
-<div class="product-info">
-<h3>Jiko Koa Premium Plus</h3>
-<p class="product-description">Our premium option for demanding customers.</p>
-<div class="price">KSh 8,500</div>
-<div class="product-actions">
-<button class="add-cart" onclick="addToCart('Jiko Koa Premium Plus',8500)">Add to Cart</button>
-<button class="order-now" onclick="orderProduct('Jiko Koa Premium Plus',8500)">Order</button>
-</div>
-</div>
-</div>
-
-</div>
-</section>
 
 <!-- WHY JIKO KOA -->
 <section>
+
 <div class="section-heading">
+
 <span>Why Jiko Koa</span>
+
 <h2>Built around your needs</h2>
+
 <p>
 We combine practical energy efficiency with affordability,
 durability and convenient service.
 </p>
+
 </div>
 
 <div class="container why-grid">
@@ -1255,17 +1462,27 @@ durability and convenient service.
 </div>
 
 </div>
+
 </section>
+
 
 <!-- PROCESS -->
 <section class="process">
 
 <div class="section-heading">
-<span style="color:#d8a83e;">How To Order</span>
-<h2>Simple. Fast. Convenient.</h2>
+
+<span style="color:#d8a83e;">
+How To Order
+</span>
+
+<h2>
+Simple. Fast. Convenient.
+</h2>
+
 <p>
 Get your Jiko Koa solution in four easy steps.
 </p>
+
 </div>
 
 <div class="container process-grid">
@@ -1295,46 +1512,64 @@ Get your Jiko Koa solution in four easy steps.
 </div>
 
 </div>
+
 </section>
+
 
 <!-- PAYMENT -->
 <section class="payment">
 
 <div class="section-heading">
+
 <span>Easy Payments</span>
-<h2>Pay securely and conveniently</h2>
+
+<h2>
+Pay securely and conveniently
+</h2>
+
 <p>
 We support convenient mobile-money payment options.
 </p>
+
 </div>
 
 <div class="container payment-grid">
 
 <div class="payment-card">
+
 <h3>📱 M-Pesa</h3>
+
 <p>
 Pay for your Jiko Koa order using <strong>M-Pesa</strong>.
 </p>
+
 <p class="payment-note">
 Contact us on WhatsApp before payment so we can confirm
 your product, delivery location and the correct payment details.
 </p>
+
 </div>
 
 <div class="payment-card">
+
 <h3>📲 Airtel Money</h3>
+
 <p>
 We also support <strong>Airtel Money</strong> for customers
 who prefer Airtel's mobile payment service.
 </p>
+
 <p class="payment-note">
 Please contact Jiko Koa to confirm the payment details
 before completing your transaction.
 </p>
+
 </div>
 
 </div>
+
 </section>
+
 
 <!-- DELIVERY -->
 <section class="delivery" id="delivery">
@@ -1342,6 +1577,7 @@ before completing your transaction.
 <div class="container delivery-grid">
 
 <div>
+
 <h2>
 We deliver your Jiko Koa to you.
 </h2>
@@ -1351,12 +1587,16 @@ Enjoy free delivery within Nairobi. We can also arrange
 delivery outside Nairobi depending on your location.
 </p>
 
-<a href="https://wa.me/" class="btn btn-primary" style="margin-top:25px;">
+<a href="https://wa.me/"
+class="btn btn-primary"
+style="margin-top:25px;">
 Check Delivery
 </a>
+
 </div>
 
 <div class="delivery-box">
+
 <h3>🚚 Delivery Information</h3>
 
 <p>
@@ -1382,14 +1622,21 @@ charge and estimated delivery time.
 </div>
 
 </div>
+
 </section>
+
 
 <!-- FAQ -->
 <section>
 
 <div class="section-heading">
+
 <span>FAQ</span>
-<h2>Frequently Asked Questions</h2>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
 </div>
 
 <div class="faq-list">
@@ -1434,25 +1681,35 @@ payment details before sending money.
 </details>
 
 </div>
+
 </section>
+
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
 
 <div class="section-heading">
+
 <span>Contact Jiko Koa</span>
-<h2>Let's power better cooking together.</h2>
+
+<h2>
+Let's power better cooking together.
+</h2>
+
 <p>
 Have a question, need a quotation or want to place an order?
 Contact our team.
 </p>
+
 </div>
 
 <div class="container contact-grid">
 
 <div class="contact-card">
 
-<h3 style="color:#063d25;">Get In Touch</h3>
+<h3 style="color:#063d25;">
+Get In Touch
+</h3>
 
 <div class="contact-item">
 <strong>📍 Location</strong>
@@ -1461,7 +1718,9 @@ Nairobi, Kenya
 
 <div class="contact-item">
 <strong>📱 WhatsApp</strong>
-<a href="https://wa.me/">Chat with Jiko Koa</a>
+<a href="https://wa.me/">
+Chat with Jiko Koa
+</a>
 </div>
 
 <div class="contact-item">
@@ -1474,15 +1733,19 @@ Nairobi and selected locations across Kenya
 Monday – Saturday
 </div>
 
-<a href="https://wa.me/" class="whatsapp-large">
+<a href="https://wa.me/"
+class="whatsapp-large">
 💬 Order via WhatsApp
 </a>
 
 </div>
 
+
 <div class="contact-card">
 
-<h3 style="color:#063d25;">Jiko Koa Mission</h3>
+<h3 style="color:#063d25;">
+Jiko Koa Mission
+</h3>
 
 <p style="margin-top:15px;color:#65736a;">
 Our mission is to make efficient and practical clean-cooking
@@ -1497,20 +1760,25 @@ cooking needs.
 </p>
 
 <div style="margin-top:25px;padding:20px;background:#edf6ed;border-radius:15px;">
+
 <strong style="color:#08763c;">
 🌱 JIKO KOA
 </strong>
+
 <p style="font-size:13px;margin-top:5px;">
 Renewable Energy & Clean Cooking Solutions
 </p>
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 </main>
+
 
 <!-- FOOTER -->
 <footer>
@@ -1518,71 +1786,111 @@ Renewable Energy & Clean Cooking Solutions
 <div class="footer-grid">
 
 <div>
+
 <h3>JIKO KOA</h3>
+
 <p>
 Renewable Energy & Clean Cooking Solutions.
 Providing practical, efficient and affordable cooking
 solutions for Kenya.
 </p>
+
 </div>
 
 <div>
+
 <h3>Quick Links</h3>
+
 <div class="footer-links">
+
 <a href="#home">Home</a>
+<a href="#products">Products</a>
 <a href="#about">About</a>
 <a href="#solutions">Solutions</a>
-<a href="#products">Products</a>
 <a href="#delivery">Delivery</a>
+
 </div>
+
 </div>
 
 <div>
+
 <h3>Contact</h3>
+
 <div class="footer-links">
+
 <a href="https://wa.me/">WhatsApp</a>
 <a href="#contact">Contact Us</a>
 <a href="#products">Shop Now</a>
+
 </div>
+
 </div>
 
 </div>
 
 <div class="copyright">
-© 2026 Jiko Koa. All Rights Reserved. | Renewable Energy & Clean Cooking Solutions
+© 2026 Jiko Koa. All Rights Reserved. |
+Renewable Energy & Clean Cooking Solutions
 </div>
 
 </footer>
 
+
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
+<a href="https://wa.me/"
+class="whatsapp-float"
+aria-label="WhatsApp">
 💬
 </a>
 
-<!-- CART -->
-<div class="cart-overlay" id="cartOverlay" onclick="closeCartOutside(event)">
 
-<div class="cart" onclick="event.stopPropagation()">
+<!-- CART -->
+<div class="cart-overlay"
+id="cartOverlay"
+onclick="closeCartOutside(event)">
+
+<div class="cart"
+onclick="event.stopPropagation()">
 
 <div class="cart-header">
+
 <h2>Your Cart</h2>
-<button class="close-cart" onclick="closeCart()">×</button>
+
+<button class="close-cart"
+onclick="closeCart()">
+×
+</button>
+
 </div>
 
 <div id="cartItems">
-<p style="color:#777;">Your cart is empty.</p>
+
+<p style="color:#777;">
+Your cart is empty.
+</p>
+
 </div>
 
 <div class="cart-total">
+
 <p>Total</p>
-<strong id="cartTotal">KSh 0</strong>
-<button class="checkout" onclick="checkoutWhatsApp()">
+
+<strong id="cartTotal">
+KSh 0
+</strong>
+
+<button class="checkout"
+onclick="checkoutWhatsApp()">
 Order Cart via WhatsApp
 </button>
+
 </div>
 
 </div>
+
 </div>
+
 
 <script>
 
@@ -1590,133 +1898,170 @@ let cart = [];
 
 function addToCart(name,price){
 
-    cart.push({
-        name:name,
-        price:price
-    });
+cart.push({
+name:name,
+price:price
+});
 
-    updateCart();
+updateCart();
 
-    document.getElementById("cartOverlay").classList.add("active");
+document.getElementById("cartOverlay")
+.classList.add("active");
+
 }
 
 function updateCart(){
 
-    const items = document.getElementById("cartItems");
-    const count = document.getElementById("cartCount");
-    const total = document.getElementById("cartTotal");
+const items =
+document.getElementById("cartItems");
 
-    count.textContent = cart.length;
+const count =
+document.getElementById("cartCount");
 
-    if(cart.length === 0){
+const total =
+document.getElementById("cartTotal");
 
-        items.innerHTML =
-        '<p style="color:#777;">Your cart is empty.</p>';
+count.textContent = cart.length;
 
-        total.textContent = "KSh 0";
-        return;
-    }
+if(cart.length === 0){
 
-    let html = "";
-    let sum = 0;
+items.innerHTML =
+'<p style="color:#777;">Your cart is empty.</p>';
 
-    cart.forEach((item,index)=>{
+total.textContent = "KSh 0";
 
-        sum += item.price;
+return;
 
-        html += `
-        <div class="cart-item">
-            <div>
-                <h4>${item.name}</h4>
-                <small>KSh ${item.price.toLocaleString()}</small>
-            </div>
+}
 
-            <button class="remove-item"
-            onclick="removeItem(${index})">
-            Remove
-            </button>
-        </div>
-        `;
-    });
+let html = "";
+let sum = 0;
 
-    items.innerHTML = html;
-    total.textContent = "KSh " + sum.toLocaleString();
+cart.forEach((item,index)=>{
+
+sum += item.price;
+
+html += `
+<div class="cart-item">
+
+<div>
+
+<h4>${item.name}</h4>
+
+<small>
+KSh ${item.price.toLocaleString()}
+</small>
+
+</div>
+
+<button
+class="remove-item"
+onclick="removeItem(${index})">
+Remove
+</button>
+
+</div>
+`;
+
+});
+
+items.innerHTML = html;
+
+total.textContent =
+"KSh " + sum.toLocaleString();
+
 }
 
 function removeItem(index){
 
-    cart.splice(index,1);
-    updateCart();
+cart.splice(index,1);
+
+updateCart();
+
 }
 
 function openCart(){
 
-    document.getElementById("cartOverlay")
-    .classList.add("active");
+document.getElementById("cartOverlay")
+.classList.add("active");
+
 }
 
 function closeCart(){
 
-    document.getElementById("cartOverlay")
-    .classList.remove("active");
+document.getElementById("cartOverlay")
+.classList.remove("active");
+
 }
 
 function closeCartOutside(event){
 
-    if(event.target.id === "cartOverlay"){
-        closeCart();
-    }
+if(event.target.id === "cartOverlay"){
+
+closeCart();
+
+}
+
 }
 
 function orderProduct(name,price){
 
-    const message =
-    "Hello Jiko Koa,%0A%0A" +
-    "I would like to order:%0A" +
-    name + "%0A" +
-    "Price: KSh " + price.toLocaleString() +
-    "%0A%0APlease confirm availability and delivery.";
+const message =
+"Hello Jiko Koa,%0A%0A" +
+"I would like to order:%0A" +
+name + "%0A" +
+"Price: KSh " +
+price.toLocaleString() +
+"%0A%0A" +
+"Please confirm availability and delivery.";
 
-    window.open(
-        "https://wa.me/?text=" + message,
-        "_blank"
-    );
+window.open(
+"https://wa.me/?text=" + message,
+"_blank"
+);
+
 }
 
 function checkoutWhatsApp(){
 
-    if(cart.length === 0){
+if(cart.length === 0){
 
-        alert("Your cart is empty.");
-        return;
-    }
+alert("Your cart is empty.");
 
-    let message =
-    "Hello Jiko Koa,%0A%0AI would like to place an order:%0A%0A";
+return;
 
-    let total = 0;
+}
 
-    cart.forEach((item,index)=>{
+let message =
+"Hello Jiko Koa,%0A%0A" +
+"I would like to place an order:%0A%0A";
 
-        message +=
-        (index+1) + ". " +
-        item.name +
-        " - KSh " +
-        item.price.toLocaleString() +
-        "%0A";
+let total = 0;
 
-        total += item.price;
-    });
+cart.forEach((item,index)=>{
 
-    message +=
-    "%0ATotal: KSh " +
-    total.toLocaleString() +
-    "%0A%0APlease confirm delivery and payment details.";
+message +=
+(index+1) + ". " +
+item.name +
+" - KSh " +
+item.price.toLocaleString() +
+"%0A";
 
-    window.open(
-        "https://wa.me/?text=" + message,
-        "_blank"
-    );
+total += item.price;
+
+});
+
+message +=
+"%0ATotal: KSh " +
+total.toLocaleString() +
+"%0A%0A" +
+"Please confirm delivery and payment details.";
+
+window.open(
+"https://wa.me/?text=" + message,
+"_blank"
+);
+
 }
 
 </script>
