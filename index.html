@@ -1,2071 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="kECvSDTe_kMeN_geAL9DFkBJ9gMPigSMs79FqMr9-wI" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jiko Koa | Renewable Energy & Clean Cooking Solutions Kenya</title>
-
-<meta name="description" content="Jiko Koa provides modern, energy-efficient charcoal cooking stoves and clean cooking solutions in Kenya. Quality products, affordable prices and reliable delivery.">
-<meta name="keywords" content="Jiko Koa, renewable energy Kenya, clean cooking Kenya, energy efficient jiko, charcoal stove Kenya, modern jiko, clean energy, Nairobi jiko">
 <meta name="theme-color" content="#08763c">
-
-<meta property="og:title" content="Jiko Koa | Renewable Energy & Clean Cooking Solutions">
-<meta property="og:description" content="Better cooking. Smarter energy. A cleaner future with Jiko Koa.">
-<meta property="og:type" content="website">
+<meta name="description" content="Jiko Koa — professional clean cooking and energy solutions in Kenya. Shop efficient charcoal stoves, gas stoves, electric cookers, cookware and grills.">
+<meta name="keywords" content="Jiko Koa, charcoal stoves Kenya, energy saving jiko, clean cooking Kenya, efficient cookers, Nairobi stoves, cookware">
+<title>Jiko Koa | Clean Cooking & Energy Solutions</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-    --green:#08763c;
-    --dark:#063d25;
-    --deep:#03291a;
-    --cream:#fff8e8;
-    --gold:#d8a83e;
-    --light:#f5f1df;
-    --white:#ffffff;
-    --text:#183528;
-    --shadow:0 12px 35px rgba(0,0,0,.12);
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:
-        radial-gradient(circle at top right,rgba(216,168,62,.13),transparent 30%),
-        linear-gradient(135deg,#fffdf4,#eef7ee);
-    color:var(--text);
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-button{
-    font-family:inherit;
-}
-
-/* HEADER */
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(3,41,26,.96);
-    backdrop-filter:blur(12px);
-    color:white;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-}
-
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    padding:15px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-}
-
-.logo{
-    font-size:24px;
-    font-weight:800;
-    letter-spacing:.5px;
-}
-
-.logo span{
-    color:var(--gold);
-}
-
-.logo small{
-    display:block;
-    font-size:8px;
-    letter-spacing:2px;
-    color:#dcebdd;
-    font-weight:500;
-}
-
-.nav-links{
-    display:flex;
-    gap:22px;
-    align-items:center;
-}
-
-.nav-links a{
-    font-size:14px;
-    color:#fff;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:var(--gold);
-}
-
-.cart-button{
-    border:0;
-    background:var(--gold);
-    color:#102719;
-    padding:10px 15px;
-    border-radius:30px;
-    cursor:pointer;
-    font-weight:700;
-}
-
-.cart-count{
-    background:#fff;
-    border-radius:50%;
-    padding:2px 7px;
-    margin-left:4px;
-}
-
-/* HERO */
-.hero{
-    min-height:650px;
-    display:flex;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-    background:
-        linear-gradient(90deg,rgba(3,41,26,.95),rgba(3,41,26,.68),rgba(3,41,26,.2)),
-        url('hero.jpg') center/cover no-repeat;
-    color:white;
-}
-
-.hero-content{
-    max-width:1200px;
-    width:100%;
-    margin:auto;
-    padding:80px 20px;
-}
-
-.badge{
-    display:inline-block;
-    padding:8px 15px;
-    border:1px solid rgba(255,255,255,.35);
-    border-radius:30px;
-    background:rgba(255,255,255,.1);
-    font-size:13px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    max-width:720px;
-    font-size:clamp(38px,6vw,70px);
-    line-height:1.05;
-    margin-bottom:22px;
-}
-
-.hero h1 span{
-    color:var(--gold);
-}
-
-.hero p{
-    max-width:650px;
-    font-size:18px;
-    color:#edf5ed;
-    margin-bottom:30px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 23px;
-    border-radius:35px;
-    font-weight:700;
-    border:0;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:var(--gold);
-    color:#122619;
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(216,168,62,.35);
-}
-
-.btn-outline{
-    border:1px solid white;
-    color:white;
-    background:transparent;
-}
-
-.btn-outline:hover{
-    background:white;
-    color:var(--dark);
-}
-
-/* GENERAL SECTIONS */
-section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-heading{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 45px;
-}
-
-.section-heading span{
-    color:var(--green);
-    font-weight:700;
-    text-transform:uppercase;
-    font-size:12px;
-    letter-spacing:2px;
-}
-
-.section-heading h2{
-    font-size:clamp(28px,4vw,43px);
-    color:var(--dark);
-    margin:8px 0 12px;
-}
-
-.section-heading p{
-    color:#617066;
-}
-
-/* PRODUCTS - NOW BEFORE ABOUT */
-.products{
-    background:var(--cream);
-}
-
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.product-card{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-    transition:.3s;
-}
-
-.product-card:hover{
-    transform:translateY(-6px);
-}
-
-.product-image{
-    height:220px;
-    background:#e9e9df;
-    overflow:hidden;
-}
-
-.product-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.product-card:hover img{
-    transform:scale(1.05);
-}
-
-.product-info{
-    padding:18px;
-}
-
-.product-info h3{
-    color:var(--dark);
-    font-size:17px;
-}
-
-.product-description{
-    color:#718076;
-    font-size:12px;
-    margin:7px 0 12px;
-}
-
-.price{
-    color:var(--green);
-    font-size:20px;
-    font-weight:800;
-    margin-bottom:13px;
-}
-
-.product-actions{
-    display:flex;
-    gap:8px;
-}
-
-.add-cart{
-    flex:1;
-    background:var(--green);
-    color:white;
-    border:0;
-    padding:11px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:700;
-}
-
-.order-now{
-    background:#e9f3e9;
-    color:var(--green);
-    border:0;
-    padding:11px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:700;
-}
-
-/* STATS */
-.stats{
-    background:var(--green);
-    color:white;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.stat{
-    text-align:center;
-    padding:20px;
-}
-
-.stat strong{
-    display:block;
-    font-size:30px;
-    color:var(--gold);
-}
-
-.stat span{
-    font-size:13px;
-}
-
-/* ABOUT */
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.about-image{
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-}
-
-.about-image img{
-    width:100%;
-    height:460px;
-    object-fit:cover;
-}
-
-.about-text h2{
-    font-size:40px;
-    color:var(--dark);
-    line-height:1.15;
-    margin-bottom:20px;
-}
-
-.about-text p{
-    margin-bottom:18px;
-    color:#5b6d62;
-}
-
-.check-list{
-    list-style:none;
-    margin-top:20px;
-}
-
-.check-list li{
-    margin:12px 0;
-    font-weight:600;
-}
-
-.check-list li::before{
-    content:"✓";
-    color:var(--green);
-    font-weight:900;
-    margin-right:10px;
-}
-
-/* SOLUTIONS */
-.solutions{
-    background:#f0f7ed;
-}
-
-.solution-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
-
-.solution-card{
-    background:white;
-    padding:30px;
-    border-radius:22px;
-    box-shadow:var(--shadow);
-    transition:.3s;
-    border-top:4px solid var(--green);
-}
-
-.solution-card:hover{
-    transform:translateY(-8px);
-}
-
-.solution-icon{
-    font-size:35px;
-    margin-bottom:15px;
-}
-
-.solution-card h3{
-    color:var(--dark);
-    margin-bottom:10px;
-}
-
-/* WHY US */
-.why-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.why-card{
-    text-align:center;
-    padding:25px 15px;
-    border-radius:20px;
-    background:white;
-    box-shadow:var(--shadow);
-}
-
-.why-card .icon{
-    font-size:35px;
-    margin-bottom:10px;
-}
-
-.why-card h3{
-    font-size:16px;
-    color:var(--dark);
-}
-
-/* PROCESS */
-.process{
-    background:var(--dark);
-    color:white;
-}
-
-.process .section-heading h2{
-    color:white;
-}
-
-.process .section-heading p{
-    color:#c9d8cd;
-}
-
-.process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.step{
-    text-align:center;
-    position:relative;
-}
-
-.step-number{
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:0 auto 15px;
-    background:var(--gold);
-    color:var(--dark);
-    font-weight:800;
-}
-
-.step h3{
-    margin-bottom:8px;
-}
-
-/* PAYMENT */
-.payment{
-    background:#f3f8ef;
-}
-
-.payment-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.payment-card{
-    background:white;
-    padding:30px;
-    border-radius:22px;
-    box-shadow:var(--shadow);
-}
-
-.payment-card h3{
-    color:var(--dark);
-    margin-bottom:15px;
-}
-
-.payment-card strong{
-    color:var(--green);
-}
-
-.payment-note{
-    margin-top:15px;
-    font-size:13px;
-    color:#68766e;
-}
-
-/* DELIVERY */
-.delivery{
-    background:linear-gradient(135deg,var(--green),var(--dark));
-    color:white;
-}
-
-.delivery-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.delivery h2{
-    font-size:42px;
-    line-height:1.15;
-    margin-bottom:18px;
-}
-
-.delivery p{
-    color:#dce9de;
-}
-
-.delivery-box{
-    background:rgba(255,255,255,.1);
-    border:1px solid rgba(255,255,255,.2);
-    padding:30px;
-    border-radius:22px;
-}
-
-.delivery-box h3{
-    color:var(--gold);
-    margin-bottom:10px;
-}
-
-/* FAQ */
-.faq-list{
-    max-width:850px;
-    margin:auto;
-}
-
-details{
-    background:white;
-    margin-bottom:12px;
-    border-radius:12px;
-    padding:18px 20px;
-    box-shadow:0 5px 18px rgba(0,0,0,.07);
-}
-
-summary{
-    cursor:pointer;
-    font-weight:700;
-    color:var(--dark);
-}
-
-details p{
-    margin-top:12px;
-    color:#68766e;
-}
-
-/* CONTACT */
-.contact{
-    background:var(--cream);
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.contact-card{
-    background:white;
-    padding:30px;
-    border-radius:22px;
-    box-shadow:var(--shadow);
-}
-
-.contact-item{
-    padding:15px 0;
-    border-bottom:1px solid #eee;
-}
-
-.contact-item:last-child{
-    border:0;
-}
-
-.contact-item strong{
-    display:block;
-    color:var(--dark);
-}
-
-.contact-item a{
-    color:var(--green);
-    font-weight:600;
-}
-
-.whatsapp-large{
-    display:inline-block;
-    margin-top:20px;
-    background:#128c48;
-    color:white;
-    padding:14px 22px;
-    border-radius:30px;
-    font-weight:700;
-}
-
-/* FOOTER */
-footer{
-    background:#021f13;
-    color:white;
-    padding:50px 20px 25px;
-}
-
-.footer-grid{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:40px;
-}
-
-footer h3{
-    color:var(--gold);
-    margin-bottom:12px;
-}
-
-footer p,footer a{
-    color:#b8c8bd;
-    font-size:13px;
-}
-
-.footer-links{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.copyright{
-    max-width:1200px;
-    margin:35px auto 0;
-    padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.12);
-    text-align:center;
-    color:#8da196;
-    font-size:12px;
-}
-
-/* FLOATING WHATSAPP */
-.whatsapp-float{
-    position:fixed;
-    right:18px;
-    bottom:20px;
-    z-index:999;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#159447;
-    color:white;
-    font-size:27px;
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
-}
-
-/* CART */
-.cart-overlay{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.55);
-    z-index:2000;
-}
-
-.cart-overlay.active{
-    display:block;
-}
-
-.cart{
-    position:absolute;
-    right:0;
-    top:0;
-    height:100%;
-    width:min(420px,100%);
-    background:#fffdf5;
-    padding:25px;
-    overflow-y:auto;
-    box-shadow:-10px 0 30px rgba(0,0,0,.2);
-}
-
-.cart-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-}
-
-.cart-header h2{
-    color:var(--dark);
-}
-
-.close-cart{
-    border:0;
-    background:#eee;
-    width:35px;
-    height:35px;
-    border-radius:50%;
-    cursor:pointer;
-    font-size:18px;
-}
-
-.cart-item{
-    display:flex;
-    justify-content:space-between;
-    gap:10px;
-    padding:14px 0;
-    border-bottom:1px solid #ddd;
-}
-
-.cart-item h4{
-    font-size:14px;
-}
-
-.cart-item small{
-    color:var(--green);
-}
-
-.remove-item{
-    border:0;
-    background:none;
-    color:#b22;
-    cursor:pointer;
-}
-
-.cart-total{
-    margin-top:25px;
-    padding:18px;
-    background:#edf6ed;
-    border-radius:15px;
-}
-
-.cart-total strong{
-    color:var(--green);
-    font-size:22px;
-}
-
-.checkout{
-    width:100%;
-    margin-top:15px;
-    border:0;
-    background:var(--green);
-    color:white;
-    padding:14px;
-    border-radius:12px;
-    font-weight:800;
-    cursor:pointer;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-
-    .nav-links{
-        display:none;
-    }
-
-    .stats-grid,
-    .why-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .product-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .solution-grid{
-        grid-template-columns:1fr;
-    }
-
-    .about-grid,
-    .delivery-grid,
-    .payment-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .process-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:35px 20px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:560px){
-
-    section{
-        padding:60px 15px;
-    }
-
-    .hero{
-        min-height:600px;
-    }
-
-    .hero-content{
-        padding:60px 18px;
-    }
-
-    .hero h1{
-        font-size:42px;
-    }
-
-    .hero p{
-        font-size:15px;
-    }
-
-    .stats-grid,
-    .why-grid,
-    .product-grid,
-    .process-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .product-image{
-        height:170px;
-    }
-
-    .product-info{
-        padding:13px;
-    }
-
-    .product-info h3{
-        font-size:14px;
-    }
-
-    .price{
-        font-size:17px;
-    }
-
-    .product-actions{
-        flex-direction:column;
-    }
-
-    .about-text h2,
-    .delivery h2{
-        font-size:32px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
+  --green:#08763c; --green2:#0b8f4a; --deep:#064d2a;
+  --cream:#fff9ed; --cream2:#f7f0df; --gold:#d99a21;
+  --red:#c92f2f; --ink:#17231c; --muted:#647067;
+  --card:#fffdf7; --line:#eadfca; --shadow:0 16px 40px rgba(34,58,42,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:linear-gradient(180deg,#fffaf0 0,#f8f2e6 45%,#fffaf0 100%);line-height:1.55}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+img{display:block;max-width:100%}
+
+.topbar{background:linear-gradient(90deg,var(--deep),var(--green));color:#fff;font-size:13px;font-weight:600}
+.topbar .wrap{max-width:1200px;margin:auto;padding:9px 20px;display:flex;justify-content:space-between;gap:15px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,250,239,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:25px}
+.logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+.logo-mark{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--green),#13a85b);display:grid;place-items:center;color:#fff;font-size:23px;font-weight:800;box-shadow:0 8px 20px #08763c35}
+.logo strong{font-family:Manrope;font-size:25px;letter-spacing:-1px;color:var(--green)}
+.logo small{display:block;color:var(--muted);font-size:9px;letter-spacing:1.4px;font-weight:700}
+.links{display:flex;gap:24px;font-weight:700;font-size:14px}
+.links a:hover,.links a.active{color:var(--green)}
+.nav-actions{display:flex;gap:9px}
+.iconbtn,.cartbtn{border:0;cursor:pointer;border-radius:12px;padding:10px 13px;font-weight:800}
+.iconbtn{background:#efe6d4;color:var(--green)}
+.cartbtn{background:var(--green);color:white}
+
+.hero{max-width:1200px;margin:0 auto;padding:70px 20px 45px;display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+.hero h1{font-family:Manrope;font-size:clamp(42px,6vw,72px);line-height:1.02;margin:12px 0 18px;letter-spacing:-3px}
+.hero h1 span{color:var(--green)}
+.hero p{font-size:18px;color:var(--muted);max-width:620px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{border:0;border-radius:13px;padding:13px 20px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.btn.primary{background:var(--green);color:#fff;box-shadow:0 10px 24px #08763c2e}
+.btn.secondary{background:#f2e7cf;color:var(--deep)}
+.hero-card{border-radius:30px;min-height:380px;background:radial-gradient(circle at 30% 20%,#e2a92c 0 10%,transparent 35%),linear-gradient(135deg,#0a713a,#064d2a);padding:25px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero-card:after{content:"";position:absolute;width:320px;height:320px;border:1px solid #ffffff3d;border-radius:50%;right:-90px;bottom:-130px}
+.hero-badge{position:absolute;left:25px;top:25px;background:#fff8e9;color:var(--deep);padding:9px 13px;border-radius:999px;font-weight:800;font-size:12px}
+.hero-copy{position:absolute;left:30px;bottom:30px;color:white;z-index:2}
+.hero-copy h3{font-family:Manrope;font-size:30px;margin:0 0 6px}
+.hero-copy p{color:#e9f6ec;margin:0;font-size:14px}
+.flame{position:absolute;right:35px;top:55px;font-size:110px;filter:drop-shadow(0 12px 25px #0005)}
+
+.section{max-width:1200px;margin:auto;padding:45px 20px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}
+.section-head h2{font-family:Manrope;font-size:34px;margin:5px 0}
+.section-head p{color:var(--muted);margin:0}
+.toolbar{background:#fffdf7;border:1px solid var(--line);border-radius:18px;padding:13px;display:flex;gap:10px;flex-wrap:wrap;margin-bottom:25px;box-shadow:0 8px 24px #5e4a2110}
+.search{flex:1;min-width:210px;position:relative}
+.search input{width:100%;padding:12px 15px;border:1px solid var(--line);border-radius:12px;background:#fffaf0;outline:none}
+select{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fffaf0;color:var(--ink);font-weight:600}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter{border:1px solid var(--line);background:#fffaf0;color:var(--green);padding:9px 13px;border-radius:999px;font-weight:800;cursor:pointer}
+.filter.active,.filter:hover{background:var(--green);color:white;border-color:var(--green)}
+
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px #44371b12;display:flex;flex-direction:column;transition:.25s}
+.product:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.pic{height:225px;background:#f3ead8;position:relative;overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;border-radius:8px;padding:6px 9px;font-weight:800;font-size:12px}
+.product-body{padding:15px;display:flex;flex-direction:column;flex:1}
+.category{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:#7c837c;font-weight:800}
+.product h3{font-family:Manrope;font-size:17px;line-height:1.2;margin:6px 0}
+.desc{color:var(--muted);font-size:13px;margin:0 0 12px;min-height:40px}
+.stars{color:#d77d13;letter-spacing:1px;font-size:14px;margin-bottom:5px}
+.price{display:flex;align-items:baseline;gap:8px;margin-bottom:13px}
+.price strong{color:var(--green);font-size:20px}
+.old{text-decoration:line-through;color:#899089;font-size:13px}
+.product-actions{display:flex;gap:8px;margin-top:auto}
+.add{flex:1;border:0;background:var(--green);color:white;padding:11px;border-radius:11px;font-weight:800;cursor:pointer}
+.details{border:1px solid var(--line);background:#f4ead6;color:var(--deep);padding:11px;border-radius:11px;font-weight:800;cursor:pointer}
+.empty{display:none;text-align:center;padding:50px;background:#fffdf7;border:1px dashed var(--line);border-radius:18px;color:var(--muted)}
+
+.benefits{background:linear-gradient(90deg,#064d2a,#08763c);color:#fff}
+.benefit-grid{max-width:1200px;margin:auto;padding:28px 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.benefit{display:flex;gap:12px;align-items:flex-start}
+.benefit .ico{font-size:25px}
+.benefit b{display:block}.benefit span{font-size:12px;color:#d8f0df}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}
+.about-card{background:#fffdf7;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+.about-card h3{font-family:Manrope;font-size:26px;margin-top:0}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.check{background:#f3ead8;border-radius:12px;padding:11px;font-size:13px;font-weight:700;color:var(--deep)}
+.delivery{background:linear-gradient(145deg,#08763c,#0a5f32);color:white}
+.delivery p{color:#e0f3e5}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-box{background:#fffdf7;border:1px solid var(--line);border-radius:22px;padding:25px}
+.contact-box h3{font-family:Manrope;margin-top:0}
+.info{display:flex;gap:10px;margin:13px 0;color:var(--muted)}
+.info b{color:var(--ink)}
+footer{background:#04391f;color:#d8eadc;padding:35px 20px}
+.footerin{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer strong{color:#fff;font-family:Manrope;font-size:20px}
+footer small{color:#a9c6b1}
+
+.cart-overlay{position:fixed;inset:0;background:#001b0c66;z-index:100;display:none}
+.cart-overlay.show{display:block}
+.cart{position:absolute;right:0;top:0;height:100%;width:min(440px,94vw);background:#fffaf0;padding:22px;box-shadow:-15px 0 40px #0002;display:flex;flex-direction:column}
+.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}
+.close{border:0;background:#efe6d4;border-radius:10px;padding:8px 12px;cursor:pointer;font-weight:800}
+.cart-items{flex:1;overflow:auto;padding:12px 0}
+.cart-row{display:grid;grid-template-columns:65px 1fr auto;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.cart-row img{width:65px;height:65px;object-fit:cover;border-radius:10px}
+.cart-row h4{margin:0;font-size:14px}.cart-row small{color:var(--muted)}
+.qty{display:flex;align-items:center;gap:5px;margin-top:6px}
+.qty button{border:1px solid var(--line);background:#fff;padding:2px 8px;border-radius:7px;cursor:pointer}
+.cart-total{border-top:1px solid var(--line);padding-top:15px}
+.cart-total strong{font-size:23px;color:var(--green)}
+.checkout{width:100%;margin-top:12px}
+.note{font-size:11px;color:var(--muted);margin-top:8px}
+.modal{position:fixed;inset:0;background:#001b0c66;z-index:110;display:none;place-items:center;padding:20px}
+.modal.show{display:grid}
+.modal-card{width:min(650px,100%);max-height:90vh;overflow:auto;background:#fffaf0;border-radius:22px;padding:25px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.formgrid input,.formgrid textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fffdf7}
+.formgrid textarea{min-height:100px;grid-column:1/-1}
+.form-actions{display:flex;gap:10px;margin-top:15px}
+
+@media(max-width:950px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .hero{grid-template-columns:1fr}
+  .links{display:none}
+}
+@media(max-width:700px){
+  .topbar .wrap{font-size:11px;flex-direction:column;text-align:center}
+  .navin{padding:11px 13px}.logo strong{font-size:20px}.logo-mark{width:38px;height:38px}
+  .hero{padding-top:45px}.hero h1{letter-spacing:-2px}
+  .hero-card{min-height:290px}.flame{font-size:80px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .pic{height:180px}.product-body{padding:12px}.product h3{font-size:15px}.desc{font-size:12px}
+  .benefit-grid{grid-template-columns:1fr 1fr}
+  .about,.contact{grid-template-columns:1fr}
+  .section-head{display:block}.section-head h2{font-size:28px}
+  .checks{grid-template-columns:1fr}
+}
+@media(max-width:430px){
+  .grid{grid-template-columns:1fr 1fr}.pic{height:155px}
+  .product-actions{flex-direction:column}.details{display:none}
+  .price strong{font-size:17px}.price{gap:4px}
+  .benefit-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 
 <body>
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-JIKO <span>KOA</span>
-<small>RENEWABLE ENERGY • CLEAN COOKING</small>
+<div class="topbar">
+  <div class="wrap">
+    <span>🌿 Clean Cooking • Efficient Energy • Better Future</span>
+    <span>🚚 Free delivery within Nairobi*</span>
+  </div>
 </div>
 
-<div class="nav-links">
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#solutions">Solutions</a>
-<a href="#delivery">Delivery</a>
-<a href="#contact">Contact</a>
-</div>
-
-<button class="cart-button" onclick="openCart()">
-🛒 Cart <span class="cart-count" id="cartCount">0</span>
-</button>
-
-</nav>
-
+<header class="nav">
+  <div class="navin">
+    <a class="logo" href="#home" aria-label="Jiko Koa home">
+      <div class="logo-mark">🔥</div>
+      <div><strong>JIKO KOA</strong><small>CLEAN COOKING & ENERGY SOLUTIONS</small></div>
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a class="active" href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="iconbtn" href="#contact">💬</a>
+      <button class="cartbtn" onclick="openCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </div>
 </header>
 
-<main>
-
-<!-- HERO -->
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<div class="badge">
-🌱 CLEAN ENERGY • SMART COOKING • KENYA
-</div>
-
-<h1>
-Better Cooking.<br>
-<span>Smarter Energy.</span><br>
-A Cleaner Future.
-</h1>
-
-<p>
-Jiko Koa provides modern, energy-efficient cooking solutions
-designed to help Kenyan households cook better while using
-energy more efficiently.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#products" class="btn btn-primary">
-Explore Our Products
-</a>
-
-<a href="https://wa.me/" class="btn btn-outline">
-Order on WhatsApp
-</a>
-
-</div>
-
-</div>
-
+<main id="home">
+<section class="hero">
+  <div>
+    <div class="eyebrow">Our energy-conscious cooking solutions</div>
+    <h1>Cook smarter.<br><span>Live better.</span></h1>
+    <p>Jiko Koa brings together efficient cooking appliances, charcoal stoves, gas solutions, electric cookers, cookware and grills for modern Kenyan homes and businesses.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#products">Shop products →</a>
+      <a class="btn secondary" href="#about">Why Jiko Koa?</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-badge">🇰🇪 Proudly serving Kenya</div>
+    <div class="flame">♨</div>
+    <div class="hero-copy">
+      <h3>Efficient cooking solutions</h3>
+      <p>Practical products • Competitive prices • Nairobi delivery</p>
+    </div>
+  </div>
 </section>
 
-
-<!-- PRODUCTS FIRST -->
-<section class="products" id="products">
-
-<div class="section-heading">
-
-<span>Shop Jiko Koa</span>
-
-<h2>Our Cooking Solutions</h2>
-
-<p>
-Choose a Jiko Koa stove that matches your cooking needs.
-Add products to your cart or order directly through WhatsApp.
-</p>
-
-</div>
-
-<div class="container product-grid">
-
-<!-- PRODUCT 1 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko1.jpg" alt="Jiko Koa Classic Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Classic</h3>
-
-<p class="product-description">
-Efficient everyday charcoal cooking stove.
-</p>
-
-<div class="price">
-KSh 3,500
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Classic',3500)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Classic',3500)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 2 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko2.jpg" alt="Jiko Koa Standard Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Standard</h3>
-
-<p class="product-description">
-Practical and durable clean-cooking solution.
-</p>
-
-<div class="price">
-KSh 4,500
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Standard',4500)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Standard',4500)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 3 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko3.jpg" alt="Jiko Koa Premium Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Premium</h3>
-
-<p class="product-description">
-Premium stove for efficient home cooking.
-</p>
-
-<div class="price">
-KSh 5,500
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Premium',5500)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Premium',5500)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 4 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko4.jpg" alt="Jiko Koa Pro Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Pro</h3>
-
-<p class="product-description">
-Built for customers who need more cooking capacity.
-</p>
-
-<div class="price">
-KSh 6,000
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Pro',6000)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Pro',6000)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 5 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko5.jpg" alt="Jiko Koa Family Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Family</h3>
-
-<p class="product-description">
-A larger solution for family cooking.
-</p>
-
-<div class="price">
-KSh 6,500
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Family',6500)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Family',6500)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 6 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko6.jpg" alt="Jiko Koa Deluxe Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Deluxe</h3>
-
-<p class="product-description">
-Enhanced cooking solution for demanding users.
-</p>
-
-<div class="price">
-KSh 7,000
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Deluxe',7000)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Deluxe',7000)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 7 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko7.jpg" alt="Jiko Koa Enterprise Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Enterprise</h3>
-
-<p class="product-description">
-High-capacity solution for heavier cooking needs.
-</p>
-
-<div class="price">
-KSh 7,500
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Enterprise',7500)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Enterprise',7500)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-
-<!-- PRODUCT 8 -->
-<div class="product-card">
-
-<div class="product-image">
-<img src="jiko8.jpg" alt="Jiko Koa Premium Plus Stove">
-</div>
-
-<div class="product-info">
-
-<h3>Jiko Koa Premium Plus</h3>
-
-<p class="product-description">
-Our premium option for demanding customers.
-</p>
-
-<div class="price">
-KSh 8,500
-</div>
-
-<div class="product-actions">
-
-<button class="add-cart"
-onclick="addToCart('Jiko Koa Premium Plus',8500)">
-Add to Cart
-</button>
-
-<button class="order-now"
-onclick="orderProduct('Jiko Koa Premium Plus',8500)">
-Order
-</button>
-
-</div>
-
-</div>
-</div>
-
-</div>
-
+<section class="section" id="products">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Jiko Koa catalogue</div>
+      <h2>Our Products</h2>
+      <p>Choose a cooking solution that fits your home, business and budget.</p>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="search"><input id="search" type="search" placeholder="Search stoves, cookware, grill..." oninput="filterProducts()"></div>
+    <select id="sort" onchange="filterProducts()">
+      <option value="default">Default sorting</option>
+      <option value="low">Price: low to high</option>
+      <option value="high">Price: high to low</option>
+      <option value="name">Name A–Z</option>
+    </select>
+  </div>
+
+  <div class="filters" style="margin-bottom:22px">
+    <button class="filter active" data-cat="all" onclick="setCat('all',this)">All</button>
+    <button class="filter" data-cat="charcoal" onclick="setCat('charcoal',this)">Charcoal</button>
+    <button class="filter" data-cat="gas" onclick="setCat('gas',this)">Gas</button>
+    <button class="filter" data-cat="electric" onclick="setCat('electric',this)">Electric</button>
+    <button class="filter" data-cat="cookware" onclick="setCat('cookware',this)">Cookware</button>
+    <button class="filter" data-cat="grill" onclick="setCat('grill',this)">Grills</button>
+  </div>
+
+  <div class="grid" id="productGrid"></div>
+  <div class="empty" id="empty">No matching products found. Try another search or category.</div>
 </section>
 
-
-<!-- STATS -->
-<section class="stats">
-
-<div class="container stats-grid">
-
-<div class="stat">
-<strong>3,500+</strong>
-<span>Affordable entry price</span>
-</div>
-
-<div class="stat">
-<strong>8,500</strong>
-<span>Premium stove range</span>
-</div>
-
-<div class="stat">
-<strong>Nairobi</strong>
-<span>Free delivery area</span>
-</div>
-
-<div class="stat">
-<strong>100%</strong>
-<span>Customer-focused service</span>
-</div>
-
-</div>
-
+<section class="benefits" id="solutions">
+  <div class="benefit-grid">
+    <div class="benefit"><div class="ico">✓</div><div><b>Quality-focused</b><span>Practical products selected for everyday cooking.</span></div></div>
+    <div class="benefit"><div class="ico">🚚</div><div><b>Nairobi delivery</b><span>Fast and convenient local delivery options.</span></div></div>
+    <div class="benefit"><div class="ico">💳</div><div><b>Easy payment</b><span>M-Pesa and Airtel Money supported.</span></div></div>
+    <div class="benefit"><div class="ico">💬</div><div><b>Customer support</b><span>Ask us before ordering for product guidance.</span></div></div>
+  </div>
 </section>
 
-
-<!-- ABOUT -->
-<section id="about">
-
-<div class="container about-grid">
-
-<div class="about-image">
-<img src="hero.jpg" alt="Jiko Koa clean cooking solution">
-</div>
-
-<div class="about-text">
-
-<span style="color:#08763c;font-weight:700;letter-spacing:2px;font-size:12px;">
-ABOUT JIKO KOA
-</span>
-
-<h2>
-Clean cooking solutions for a smarter Kenya.
-</h2>
-
-<p>
-Jiko Koa is a Kenyan clean-cooking and renewable-energy
-solutions brand focused on making efficient cooking technology
-more accessible to households and businesses.
-</p>
-
-<p>
-Our modern cooking stoves are designed with efficiency,
-durability and affordability in mind, helping customers get
-more value from the fuel they use.
-</p>
-
-<ul class="check-list">
-<li>Energy-efficient cooking</li>
-<li>Strong and durable construction</li>
-<li>Affordable solutions</li>
-<li>Delivery within Nairobi and beyond</li>
-<li>Customer-focused support</li>
-</ul>
-
-</div>
-
-</div>
-
+<section class="section" id="about">
+  <div class="about">
+    <div class="about-card">
+      <div class="eyebrow">About Jiko Koa</div>
+      <h3>Energy-conscious cooking for modern Kenya.</h3>
+      <p>Jiko Koa is positioned as a clean-cooking and energy-solutions vendor, helping households and businesses choose efficient, practical cooking equipment.</p>
+      <p>Our catalogue includes charcoal stoves, gas stoves, electric cooking appliances, cookware and grills. Product availability and prices may change, so customers can confirm before payment.</p>
+      <div class="checks">
+        <div class="check">🌱 Efficient cooking options</div>
+        <div class="check">🇰🇪 Kenya-focused service</div>
+        <div class="check">🛠️ Practical designs</div>
+        <div class="check">💰 Competitive pricing</div>
+      </div>
+    </div>
+    <div class="about-card delivery" id="delivery">
+      <div class="eyebrow" style="color:#f3cf75">Delivery & payment</div>
+      <h3>Simple from order to doorstep.</h3>
+      <p><b>Within Nairobi:</b> Free delivery where applicable.</p>
+      <p><b>Outside Nairobi:</b> Delivery starts from KSh 300 and may vary by location.</p>
+      <p><b>Payment:</b> M-Pesa and Airtel Money. Confirm the correct payment details with Jiko Koa before sending money.</p>
+      <a class="btn" style="background:#fff;color:var(--green)" href="#contact">Contact Jiko Koa →</a>
+    </div>
+  </div>
 </section>
 
-
-<!-- SOLUTIONS -->
-<section class="solutions" id="solutions">
-
-<div class="section-heading">
-
-<span>Our Solutions</span>
-
-<h2>Smart energy for everyday cooking</h2>
-
-<p>
-Practical clean-cooking solutions designed for homes,
-businesses and institutions.
-</p>
-
-</div>
-
-<div class="container solution-grid">
-
-<div class="solution-card">
-<div class="solution-icon">🔥</div>
-<h3>Efficient Cooking</h3>
-<p>
-Designed to make better use of cooking fuel and provide
-efficient heat distribution.
-</p>
-</div>
-
-<div class="solution-card">
-<div class="solution-icon">🌱</div>
-<h3>Clean Cooking</h3>
-<p>
-Supporting the transition toward more efficient and
-sustainable cooking practices.
-</p>
-</div>
-
-<div class="solution-card">
-<div class="solution-icon">🏠</div>
-<h3>Household Solutions</h3>
-<p>
-Affordable modern cooking options suitable for everyday
-Kenyan households.
-</p>
-</div>
-
-</div>
-
+<section class="section" id="contact">
+  <div class="contact">
+    <div class="contact-box">
+      <div class="eyebrow">Contact</div>
+      <h3>Ready to order?</h3>
+      <p>Use the cart to prepare your order, then enter your details at checkout. Replace the WhatsApp number in the code with your official business number before publishing.</p>
+      <div class="info">📍 <span><b>Service area:</b><br>Nairobi, Kenya & delivery nationwide</span></div>
+      <div class="info">💳 <span><b>Payments:</b><br>M-Pesa & Airtel Money</span></div>
+      <div class="info">🕘 <span><b>Customer service:</b><br>Confirm your current opening hours before publishing.</span></div>
+    </div>
+    <div class="contact-box">
+      <div class="eyebrow">Business information</div>
+      <h3>Build trust with every order.</h3>
+      <p>Add your official phone number, WhatsApp number, physical shop location, Google Maps link, social pages and M-Pesa till/paybill here before going live.</p>
+      <button class="btn primary" onclick="openCart()">🛒 View my cart</button>
+    </div>
+  </div>
 </section>
-
-
-<!-- WHY JIKO KOA -->
-<section>
-
-<div class="section-heading">
-
-<span>Why Jiko Koa</span>
-
-<h2>Built around your needs</h2>
-
-<p>
-We combine practical energy efficiency with affordability,
-durability and convenient service.
-</p>
-
-</div>
-
-<div class="container why-grid">
-
-<div class="why-card">
-<div class="icon">⚡</div>
-<h3>Energy Efficient</h3>
-<p>Designed for efficient cooking and better fuel use.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">🛠️</div>
-<h3>Durable</h3>
-<p>Made for everyday cooking and long-term use.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">💰</div>
-<h3>Affordable</h3>
-<p>Solutions available from KSh 3,500.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">🚚</div>
-<h3>Reliable Delivery</h3>
-<p>Convenient delivery within Nairobi and beyond.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PROCESS -->
-<section class="process">
-
-<div class="section-heading">
-
-<span style="color:#d8a83e;">
-How To Order
-</span>
-
-<h2>
-Simple. Fast. Convenient.
-</h2>
-
-<p>
-Get your Jiko Koa solution in four easy steps.
-</p>
-
-</div>
-
-<div class="container process-grid">
-
-<div class="step">
-<div class="step-number">1</div>
-<h3>Choose</h3>
-<p>Select your preferred product.</p>
-</div>
-
-<div class="step">
-<div class="step-number">2</div>
-<h3>Order</h3>
-<p>Contact us through WhatsApp.</p>
-</div>
-
-<div class="step">
-<div class="step-number">3</div>
-<h3>Pay</h3>
-<p>Pay through M-Pesa or Airtel Money.</p>
-</div>
-
-<div class="step">
-<div class="step-number">4</div>
-<h3>Receive</h3>
-<p>We arrange delivery to your location.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PAYMENT -->
-<section class="payment">
-
-<div class="section-heading">
-
-<span>Easy Payments</span>
-
-<h2>
-Pay securely and conveniently
-</h2>
-
-<p>
-We support convenient mobile-money payment options.
-</p>
-
-</div>
-
-<div class="container payment-grid">
-
-<div class="payment-card">
-
-<h3>📱 M-Pesa</h3>
-
-<p>
-Pay for your Jiko Koa order using <strong>M-Pesa</strong>.
-</p>
-
-<p class="payment-note">
-Contact us on WhatsApp before payment so we can confirm
-your product, delivery location and the correct payment details.
-</p>
-
-</div>
-
-<div class="payment-card">
-
-<h3>📲 Airtel Money</h3>
-
-<p>
-We also support <strong>Airtel Money</strong> for customers
-who prefer Airtel's mobile payment service.
-</p>
-
-<p class="payment-note">
-Please contact Jiko Koa to confirm the payment details
-before completing your transaction.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- DELIVERY -->
-<section class="delivery" id="delivery">
-
-<div class="container delivery-grid">
-
-<div>
-
-<h2>
-We deliver your Jiko Koa to you.
-</h2>
-
-<p>
-Enjoy free delivery within Nairobi. We can also arrange
-delivery outside Nairobi depending on your location.
-</p>
-
-<a href="https://wa.me/"
-class="btn btn-primary"
-style="margin-top:25px;">
-Check Delivery
-</a>
-
-</div>
-
-<div class="delivery-box">
-
-<h3>🚚 Delivery Information</h3>
-
-<p>
-<strong>Within Nairobi:</strong><br>
-Free delivery.
-</p>
-
-<br>
-
-<p>
-<strong>Outside Nairobi:</strong><br>
-Delivery starts from KSh 300 and may vary depending
-on your location.
-</p>
-
-<br>
-
-<p>
-Contact us before ordering to confirm the exact delivery
-charge and estimated delivery time.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FAQ -->
-<section>
-
-<div class="section-heading">
-
-<span>FAQ</span>
-
-<h2>
-Frequently Asked Questions
-</h2>
-
-</div>
-
-<div class="faq-list">
-
-<details>
-<summary>What products does Jiko Koa sell?</summary>
-<p>
-Jiko Koa specializes in modern, energy-efficient charcoal
-cooking stoves and clean-cooking solutions.
-</p>
-</details>
-
-<details>
-<summary>How much do Jiko Koa stoves cost?</summary>
-<p>
-Our listed products range from KSh 3,500 to KSh 8,500.
-</p>
-</details>
-
-<details>
-<summary>Do you deliver?</summary>
-<p>
-Yes. Delivery is free within Nairobi. Delivery outside Nairobi
-starts from KSh 300 depending on the destination.
-</p>
-</details>
-
-<details>
-<summary>How can I order?</summary>
-<p>
-Choose a product and use the Order button or contact Jiko Koa
-through WhatsApp.
-</p>
-</details>
-
-<details>
-<summary>Which payment methods are available?</summary>
-<p>
-We support M-Pesa and Airtel Money. Contact us to confirm
-payment details before sending money.
-</p>
-</details>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-
-<div class="section-heading">
-
-<span>Contact Jiko Koa</span>
-
-<h2>
-Let's power better cooking together.
-</h2>
-
-<p>
-Have a question, need a quotation or want to place an order?
-Contact our team.
-</p>
-
-</div>
-
-<div class="container contact-grid">
-
-<div class="contact-card">
-
-<h3 style="color:#063d25;">
-Get In Touch
-</h3>
-
-<div class="contact-item">
-<strong>📍 Location</strong>
-Nairobi, Kenya
-</div>
-
-<div class="contact-item">
-<strong>📱 WhatsApp</strong>
-<a href="https://wa.me/">
-Chat with Jiko Koa
-</a>
-</div>
-
-<div class="contact-item">
-<strong>🚚 Delivery</strong>
-Nairobi and selected locations across Kenya
-</div>
-
-<div class="contact-item">
-<strong>🕐 Business Hours</strong>
-Monday – Saturday
-</div>
-
-<a href="https://wa.me/"
-class="whatsapp-large">
-💬 Order via WhatsApp
-</a>
-
-</div>
-
-
-<div class="contact-card">
-
-<h3 style="color:#063d25;">
-Jiko Koa Mission
-</h3>
-
-<p style="margin-top:15px;color:#65736a;">
-Our mission is to make efficient and practical clean-cooking
-solutions accessible to more Kenyan households while
-supporting a more sustainable energy future.
-</p>
-
-<p style="margin-top:18px;color:#65736a;">
-Whether you are buying for your home, business or institution,
-Jiko Koa is ready to help you find a solution that fits your
-cooking needs.
-</p>
-
-<div style="margin-top:25px;padding:20px;background:#edf6ed;border-radius:15px;">
-
-<strong style="color:#08763c;">
-🌱 JIKO KOA
-</strong>
-
-<p style="font-size:13px;margin-top:5px;">
-Renewable Energy & Clean Cooking Solutions
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 </main>
 
-
-<!-- FOOTER -->
 <footer>
-
-<div class="footer-grid">
-
-<div>
-
-<h3>JIKO KOA</h3>
-
-<p>
-Renewable Energy & Clean Cooking Solutions.
-Providing practical, efficient and affordable cooking
-solutions for Kenya.
-</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<div class="footer-links">
-
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#solutions">Solutions</a>
-<a href="#delivery">Delivery</a>
-
-</div>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<div class="footer-links">
-
-<a href="https://wa.me/">WhatsApp</a>
-<a href="#contact">Contact Us</a>
-<a href="#products">Shop Now</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 Jiko Koa. All Rights Reserved. |
-Renewable Energy & Clean Cooking Solutions
-</div>
-
+  <div class="footerin">
+    <div><strong>JIKO KOA</strong><br><small>Clean Cooking & Energy Solutions</small></div>
+    <div><small>© 2026 Jiko Koa. All rights reserved.</small></div>
+    <div><small>Prices and availability subject to confirmation.</small></div>
+  </div>
 </footer>
 
-
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/"
-class="whatsapp-float"
-aria-label="WhatsApp">
-💬
-</a>
-
-
-<!-- CART -->
-<div class="cart-overlay"
-id="cartOverlay"
-onclick="closeCartOutside(event)">
-
-<div class="cart"
-onclick="event.stopPropagation()">
-
-<div class="cart-header">
-
-<h2>Your Cart</h2>
-
-<button class="close-cart"
-onclick="closeCart()">
-×
-</button>
-
+<div class="cart-overlay" id="cartOverlay" onclick="if(event.target===this)closeCart()">
+  <aside class="cart">
+    <div class="cart-head"><h2 style="margin:0;font-family:Manrope">Your Cart</h2><button class="close" onclick="closeCart()">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total">
+      <div style="display:flex;justify-content:space-between"><span>Total</span><strong id="cartTotal">KSh 0</strong></div>
+      <button class="btn primary checkout" onclick="openCheckout()">Proceed to order</button>
+      <div class="note">Your order is not confirmed until Jiko Koa verifies availability, price and delivery.</div>
+    </div>
+  </aside>
 </div>
 
-<div id="cartItems">
-
-<p style="color:#777;">
-Your cart is empty.
-</p>
-
+<div class="modal" id="checkoutModal">
+  <div class="modal-card">
+    <div class="cart-head">
+      <div><div class="eyebrow">Order request</div><h2 style="margin:4px 0;font-family:Manrope">Complete your details</h2></div>
+      <button class="close" onclick="closeCheckout()">✕</button>
+    </div>
+    <div class="formgrid" style="margin-top:18px">
+      <input id="custName" placeholder="Full name" required>
+      <input id="custPhone" placeholder="Phone number" required>
+      <input id="custLocation" placeholder="Delivery location" required>
+      <input id="custPayment" placeholder="Preferred payment: M-Pesa / Airtel">
+      <textarea id="custNote" placeholder="Extra instructions (optional)"></textarea>
+    </div>
+    <div class="form-actions">
+      <button class="btn primary" onclick="sendWhatsApp()">Send order on WhatsApp</button>
+      <button class="btn secondary" onclick="closeCheckout()">Cancel</button>
+    </div>
+    <p class="note">IMPORTANT: Replace <b>254700000000</b> in the JavaScript below with your official WhatsApp number.</p>
+  </div>
 </div>
-
-<div class="cart-total">
-
-<p>Total</p>
-
-<strong id="cartTotal">
-KSh 0
-</strong>
-
-<button class="checkout"
-onclick="checkoutWhatsApp()">
-Order Cart via WhatsApp
-</button>
-
-</div>
-
-</div>
-
-</div>
-
 
 <script>
+/* =========================
+   JIKO KOA PRODUCT CATALOGUE
+   Images are the product photos
+   supplied in your screenshots.
+   ========================= */
+const products = [
+  {id:1,cat:"charcoal",name:"Jiko Koa Classic",price:3300,old:null,img:"jiko-koa-classic.jpg",desc:"Efficient everyday charcoal cooking stove for practical home use.",tags:"Energy efficient • Durable design"},
+  {id:2,cat:"charcoal",name:"Jiko Koa Standard",price:3300,old:null,img:"jiko-koa-standard.jpg",desc:"Practical charcoal cooking solution for daily family cooking.",tags:"Fuel saving • Long lasting"},
+  {id:3,cat:"charcoal",name:"Jiko Koa Cooking Classic Xtra",price:2999,old:null,img:"jiko-koa-cooking-classic.jpg",desc:"Classic design with extra stability and improved airflow.",tags:"Extra stable • Quality build"},
+  {id:4,cat:"charcoal",name:"Jiko Koa Xtra Size",price:3299,old:null,img:"jiko-koa-xtra.jpg",desc:"Extra-large cooking option for bigger pots and larger households.",tags:"Extra large • High capacity"},
+  {id:5,cat:"charcoal",name:"Jiko Koa Extra Size",price:3186,old:null,img:"jiko-koa-extra-size.jpg",desc:"Spacious charcoal stove designed for heavy-duty cooking.",tags:"Heavy duty • High efficiency"},
+  {id:6,cat:"charcoal",name:"Reki Jikokoa Modern Energy Saving",price:2800,old:null,img:"reki-modern.jpg",desc:"Modern energy-saving charcoal stove designed to reduce fuel consumption.",tags:"Energy saving • Modern design"},
+  {id:7,cat:"charcoal",name:"Charcoal Stove Jikokoa Extra",price:3399,old:null,img:"jiko-koa-extra-2.jpg",desc:"Strong charcoal stove option built for intensive cooking and long service.",tags:"Strong build • High performance"},
+  {id:8,cat:"charcoal",name:"Best Quality Jikokoa Stove",price:2500,old:null,img:"best-quality-jikokoa.jpg",desc:"Compact charcoal cooking option with a durable body and heat retention.",tags:"Premium quality • Heat efficient"},
+  {id:9,cat:"charcoal",name:"Ecoa Char Medium Jiko #1",price:2900,old:null,img:"ecoa-char-medium.jpg",desc:"Medium-size charcoal stove designed for efficient everyday cooking.",tags:"Fuel efficient • Practical size"},
+  {id:10,cat:"charcoal",name:"Reki Medium Jikokoa",price:2600,old:null,img:"reki-medium.jpg",desc:"Medium Jikokoa-style charcoal stove for household cooking.",tags:"Medium size • Durable"},
+  {id:11,cat:"gas",name:"ECOA Gas Stove",price:3890,old:5800,img:"gas-stove.jpg",desc:"Two-burner gas stove option with a practical stainless-steel body.",tags:"2 burners • Stainless steel"},
+  {id:12,cat:"electric",name:"ECOA Induction & Cookware (2 piece) set",price:11000,old:15999,img:"induction-set.jpg",desc:"Induction cooker bundled with a 2-piece stainless-steel cookware set.",tags:"Energy efficient • 2-year warranty"},
+  {id:13,cat:"cookware",name:"ECOA Stainless Steel Pot – 6L",price:2390,old:2450,img:"pot-6l.jpg",desc:"6-litre stainless-steel cooking pot with durable handles and lid.",tags:"6 litres • Stainless steel"},
+  {id:14,cat:"cookware",name:"ECOA Stainless Steel Pot – 3.7L",price:1990,old:2250,img:"pot-3-7l.jpg",desc:"3.7-litre stainless-steel pot suitable for everyday cooking.",tags:"3.7 litres • Rust resistant"},
+  {id:15,cat:"cookware",name:"ECOA Stainless Steel Pan – 28cm",price:1990,old:2300,img:"pan-28cm.jpg",desc:"28cm stainless-steel frying pan designed for everyday meals.",tags:"28 cm • Even heat"},
+  {id:16,cat:"charcoal",name:"ECOA Char Stove",price:3390,old:4490,img:"char-stove.jpg",desc:"Efficient charcoal stove for everyday household cooking.",tags:"Fuel efficient • Strong body"},
+  {id:17,cat:"charcoal",name:"ECOA Char Plus Stove",price:4490,old:5490,img:"char-plus.jpg",desc:"Enhanced charcoal stove with improved airflow and durable construction.",tags:"High efficiency • Long lasting"},
+  {id:18,cat:"charcoal",name:"ECOA Char Pro",price:6200,old:8499,img:"char-pro.jpg",desc:"Professional-grade charcoal stove option for heavier household use.",tags:"Pro grade • High capacity"},
+  {id:19,cat:"grill",name:"ECOA Grill",price:1690,old:2500,img:"grill.jpg",desc:"Portable grill suitable for grilling and roasting.",tags:"Stainless steel • Portable"},
+  {id:20,cat:"charcoal",name:"Charcoal Stove Jikokoa Extra – Option 2",price:3399,old:null,img:"jiko-koa-extra-3.jpg",desc:"Another Jikokoa Extra option shown in the supplied product listing.",tags:"Brand new • Nairobi"},
+  {id:21,cat:"charcoal",name:"Reki Jikokoa",price:2800,old:null,img:"reki-jikokoa.jpg",desc:"Reki-branded Jikokoa charcoal stove shown in the supplied listing.",tags:"Brand new • Practical"},
+];
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("jikoKoaCart") || "[]");
+let activeCat = "all";
 
-function addToCart(name,price){
+const money = n => "KSh " + n.toLocaleString("en-KE");
 
-cart.push({
-name:name,
-price:price
-});
+function discount(p){return p.old ? Math.round((1-p.price/p.old)*100) : null}
 
-updateCart();
-
-document.getElementById("cartOverlay")
-.classList.add("active");
-
+function renderProducts(list){
+  const grid=document.getElementById("productGrid");
+  grid.innerHTML="";
+  document.getElementById("empty").style.display=list.length?"none":"block";
+  list.forEach(p=>{
+    const d=discount(p);
+    const card=document.createElement("article");
+    card.className="product";
+    card.innerHTML=`
+      <div class="pic">
+        <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='${p.img}'">
+        ${d ? `<span class="tag">Save ${d}%</span>` : ""}
+      </div>
+      <div class="product-body">
+        <div class="category">${p.cat}</div>
+        <h3>${p.name}</h3>
+        <p class="desc">${p.desc}</p>
+        <div class="stars">★★★★★</div>
+        <div class="price">${p.old?`<span class="old">${money(p.old)}</span>`:""}<strong>${money(p.price)}</strong></div>
+        <div class="product-actions">
+          <button class="add" onclick="addToCart(${p.id})">Add to cart</button>
+          <button class="details" onclick="showProduct(${p.id})">Details</button>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
 }
 
-function updateCart(){
-
-const items =
-document.getElementById("cartItems");
-
-const count =
-document.getElementById("cartCount");
-
-const total =
-document.getElementById("cartTotal");
-
-count.textContent = cart.length;
-
-if(cart.length === 0){
-
-items.innerHTML =
-'<p style="color:#777;">Your cart is empty.</p>';
-
-total.textContent = "KSh 0";
-
-return;
-
+function filterProducts(){
+  const q=document.getElementById("search").value.toLowerCase().trim();
+  const sort=document.getElementById("sort").value;
+  let list=products.filter(p=>
+    (activeCat==="all"||p.cat===activeCat) &&
+    (p.name+" "+p.desc+" "+p.tags).toLowerCase().includes(q)
+  );
+  if(sort==="low")list.sort((a,b)=>a.price-b.price);
+  if(sort==="high")list.sort((a,b)=>b.price-a.price);
+  if(sort==="name")list.sort((a,b)=>a.name.localeCompare(b.name));
+  renderProducts(list);
 }
-
-let html = "";
-let sum = 0;
-
-cart.forEach((item,index)=>{
-
-sum += item.price;
-
-html += `
-<div class="cart-item">
-
-<div>
-
-<h4>${item.name}</h4>
-
-<small>
-KSh ${item.price.toLocaleString()}
-</small>
-
-</div>
-
-<button
-class="remove-item"
-onclick="removeItem(${index})">
-Remove
-</button>
-
-</div>
-`;
-
-});
-
-items.innerHTML = html;
-
-total.textContent =
-"KSh " + sum.toLocaleString();
-
+function setCat(cat,el){
+  activeCat=cat;
+  document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
+  el.classList.add("active");
+  filterProducts();
 }
-
-function removeItem(index){
-
-cart.splice(index,1);
-
-updateCart();
-
+function addToCart(id){
+  const item=cart.find(x=>x.id===id);
+  if(item)item.qty++;
+  else cart.push({id,qty:1});
+  saveCart(); openCart();
 }
-
-function openCart(){
-
-document.getElementById("cartOverlay")
-.classList.add("active");
-
+function saveCart(){
+  localStorage.setItem("jikoKoaCart",JSON.stringify(cart));
+  renderCart();
 }
-
-function closeCart(){
-
-document.getElementById("cartOverlay")
-.classList.remove("active");
-
+function changeQty(id,delta){
+  const item=cart.find(x=>x.id===id);
+  if(!item)return;
+  item.qty+=delta;
+  if(item.qty<=0)cart=cart.filter(x=>x.id!==id);
+  saveCart();
 }
-
-function closeCartOutside(event){
-
-if(event.target.id === "cartOverlay"){
-
-closeCart();
-
+function renderCart(){
+  const wrap=document.getElementById("cartItems");
+  const count=cart.reduce((s,x)=>s+x.qty,0);
+  document.getElementById("cartCount").textContent=count;
+  if(!cart.length){
+    wrap.innerHTML='<div style="text-align:center;padding:55px 10px;color:#68736b">Your cart is empty.<br><br>Browse the products and add what you need.</div>';
+    document.getElementById("cartTotal").textContent="KSh 0";
+    return;
+  }
+  let total=0;
+  wrap.innerHTML=cart.map(item=>{
+    const p=products.find(x=>x.id===item.id);
+    const sub=p.price*item.qty; total+=sub;
+    return `<div class="cart-row">
+      <img src="${p.img}" alt="${p.name}">
+      <div><h4>${p.name}</h4><small>${money(p.price)} each</small>
+      <div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><span>${item.qty}</span><button onclick="changeQty(${p.id},1)">+</button></div></div>
+      <b style="color:var(--green)">${money(sub)}</b>
+    </div>`;
+  }).join("");
+  document.getElementById("cartTotal").textContent=money(total);
 }
-
+function openCart(){document.getElementById("cartOverlay").classList.add("show");renderCart()}
+function closeCart(){document.getElementById("cartOverlay").classList.remove("show")}
+function openCheckout(){
+  if(!cart.length){alert("Your cart is empty.");return}
+  closeCart();document.getElementById("checkoutModal").classList.add("show");
 }
-
-function orderProduct(name,price){
-
-const message =
-"Hello Jiko Koa,%0A%0A" +
-"I would like to order:%0A" +
-name + "%0A" +
-"Price: KSh " +
-price.toLocaleString() +
-"%0A%0A" +
-"Please confirm availability and delivery.";
-
-window.open(
-"https://wa.me/?text=" + message,
-"_blank"
-);
-
+function closeCheckout(){document.getElementById("checkoutModal").classList.remove("show")}
+function showProduct(id){
+  const p=products.find(x=>x.id===id);
+  alert(`${p.name}\n\n${p.desc}\n\n${money(p.price)}\n\nFeatures: ${p.tags}`);
 }
-
-function checkoutWhatsApp(){
-
-if(cart.length === 0){
-
-alert("Your cart is empty.");
-
-return;
-
+function sendWhatsApp(){
+  /* REPLACE 254700000000 WITH YOUR OFFICIAL WHATSAPP NUMBER */
+  const whatsapp="254700000000";
+  const name=document.getElementById("custName").value.trim();
+  const phone=document.getElementById("custPhone").value.trim();
+  const location=document.getElementById("custLocation").value.trim();
+  const payment=document.getElementById("custPayment").value.trim()||"Not specified";
+  const note=document.getElementById("custNote").value.trim()||"None";
+  if(!name||!phone||!location){alert("Please enter your name, phone number and delivery location.");return}
+  let total=0;
+  const lines=cart.map(item=>{
+    const p=products.find(x=>x.id===item.id);
+    total+=p.price*item.qty;
+    return `• ${p.name} x${item.qty} — ${money(p.price*item.qty)}`;
+  }).join("%0A");
+  const msg=`Hello Jiko Koa, I would like to place an order.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ADelivery: ${encodeURIComponent(location)}%0APayment: ${encodeURIComponent(payment)}%0A%0AOrder:%0A${lines}%0A%0ATotal: ${money(total)}%0AExtra note: ${encodeURIComponent(note)}%0A%0APlease confirm availability, final price and delivery cost.`;
+  window.open(`https://wa.me/${whatsapp}?text=${msg}`,"_blank");
 }
-
-let message =
-"Hello Jiko Koa,%0A%0A" +
-"I would like to place an order:%0A%0A";
-
-let total = 0;
-
-cart.forEach((item,index)=>{
-
-message +=
-(index+1) + ". " +
-item.name +
-" - KSh " +
-item.price.toLocaleString() +
-"%0A";
-
-total += item.price;
-
-});
-
-message +=
-"%0ATotal: KSh " +
-total.toLocaleString() +
-"%0A%0A" +
-"Please confirm delivery and payment details.";
-
-window.open(
-"https://wa.me/?text=" + message,
-"_blank"
-);
-
-}
-
+renderProducts(products);
+renderCart();
 </script>
-
 </body>
 </html>
